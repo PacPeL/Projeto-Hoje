@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcas Disponíveis</title>
+    <link rel="stylesheet" href="/!css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/img/senai-logo.png" alt="Logo SENAI">
+            </div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="/!html/Biblioteca.html">Voltar</a></li>
+                    <li><a href="/!html/history.html">Histórico</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="marcas-section">
+            <div class="container">
+                <h2 id="titulo-marcas">Marcas Disponíveis</h2>
+                <div class="marcas-grid" id="marcasContainer"  onclick="window.location.href='Peças/Marca1PecasTorno.html'">
+                    <div class="machine-image">
+                        <img src="/img/marca1.png" alt="Torno Marcas">
+                    </div>
+                    <div class="machine-info">
+                        <h3>Torno Marcas</h3>
+                        <div class="machine-meta">
+                            <span>1 peças disponibeis</span>
+                            <span class="status-badge status-waiting">Espera</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="marcas-grid" id="marcasContainer">
+                    <div class="machine-image">
+                        <img src="/img/marca3.png" alt="Torno Marcas">
+                    </div>
+                    <div class="machine-info">
+                        <h3>Torno Marcas</h3>
+                        <div class="machine-meta">
+                            <span>5 peças disponibeis</span>
+                            <span class="status-badge status-operational">Operacional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/!javascripts/marcas.js"></script>
+</body>
+</html>
+
+<!-- <main>
+    <section class="marcas-section">
+        <div class="container">
+            <h2 id="titulo-marcas">Peças Disponíveis</h2>
+            <div class="marcas-grid" id="marcasContainer">
+                <div class="machine-image">
+                    <img src="/img/peças1Torno.png" alt="Torno Peças">
+                </div>
+                <div class="machine-info">
+                    <h3>Peça numero 1°</h3>
+                    <div class="machine-meta">
+                        <span>...</span>
+                        <button 
+                            class="status-badge status-maintenance" 
+                            onclick="cambiarEstado(this)"
+                            data-id="ID_DE_LA_PIEZA_EN_FIREBASE">
+                            Em Manutenção
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main> -->
